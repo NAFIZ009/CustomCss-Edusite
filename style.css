@@ -1,0 +1,137 @@
+/******************* font link ************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/******************* Common CSS ***********************/
+:root {
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95vw;
+  }
+}
+/******************** main css ************************/
+header {
+  width: 100%;
+}
+nav {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+a {
+    
+}
+a h1 {
+  font-size: 1.5rem;
+  color: #4a4a4a;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  align-items: center;
+}
+.navlink{
+  margin-left: 16px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+ul li {
+  padding: 0 1rem;
+  color: #777777;
+}
+.mbl-d {
+  display: none;
+}
+.btn {
+  font-size: 1rem;
+  padding: 4px 14px;
+  border: 1px solid #289bde;
+  background: none;
+  color: #289bde;
+  border-radius: 3px;
+}
+.toggle{
+    display: none;
+}
+.toggle button {
+  background: none;
+  border: none;
+
+}
+.toggle button i {
+  font-size: 2rem;
+  padding-right: 20px;
+}
+.slider{
+  position: relative;
+  
+}
+.slider-inner{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: slider;
+  animation-duration:5s ;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s;
+  overflow: hidden;
+}
+
+@keyframes slider{
+  0%{
+    left: -100%;
+  }
+  100%{
+    left: -300%;
+  }
+}
+
+
+/* responsive */
+@media screen and (max-width: 992px) {
+  .brand{
+    width: 60%;
+  }
+  .navlink {
+    display: none;
+  }
+  .navigation {
+    justify-content: flex-end;
+    width: 30%;
+  }
+  .toggle{
+    display: block;
+}
+}
+@media screen and (max-width: 570px){
+  .navigation .btn{
+    display: none;
+  }
+}
